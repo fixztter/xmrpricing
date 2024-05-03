@@ -7,9 +7,12 @@ import (
 	"time"
 )
 
+const (
+	api = "https://api.nanopool.org/v1/xmr/prices"
+)
+
 var (
-	api    = "https://api.nanopool.org/v1/xmr/prices"
-	client *http.Client
+	client = &http.Client{Timeout: time.Second * 10}
 )
 
 type XMRPrice struct {
@@ -46,7 +49,6 @@ func (x XMRCurrency) String() string {
 }
 
 func main() {
-	client = &http.Client{Timeout: time.Second * 10}
 	var xmrPrice XMRCurrency
 	data, err := xmrPrice.GetMoneroPrice(api)
 
