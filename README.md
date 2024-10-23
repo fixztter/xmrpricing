@@ -15,11 +15,19 @@ Supports the next currencies:
 - Chinese Yuan (CNY)
 - British Pound Sterling (GBP)
 
-## Build from source
+## Installation
+
+```sh
+    go install github.com/fixztter/monero-price@latest
+```
+
+### Build from source
 
 You can build with a specific name:
 
 ```sh
+    git clone https://github.com/fixztter/monero-price
+    cd monero-price
     go build -o <name> ./main.go
 ```
 
