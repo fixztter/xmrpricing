@@ -18,7 +18,7 @@ Supports the next currencies:
 ## Installation
 
 ```sh
-    go install github.com/fixztter/monero-price@latest
+go install github.com/fixztter/monero-price@latest
 ```
 
 ### Build from source
@@ -26,9 +26,9 @@ Supports the next currencies:
 You can build with a specific name:
 
 ```sh
-    git clone https://github.com/fixztter/monero-price
-    cd monero-price
-    go build -o <name> ./main.go
+git clone https://github.com/fixztter/monero-price
+cd monero-price
+go build -o <name> ./main.go
 ```
 
 ## Modify the code at your convenience
@@ -36,10 +36,9 @@ You can build with a specific name:
 Get the output you want:
 
 ```go
-    // From this
-    fmt.Printf("XMR: %.2f\n", data.Data.PriceUSD)
-    // To this
-    fmt.Printf("XMR: %.2f\n", data.Data.PriceEUR)
-  
+// From this
+fmt.Printf("XMR: %.2f\n", data.Data.PriceUSD)
+// To this
+fmt.Printf("XMR: %.2f\n", data.Data.PriceEUR)
 ```
 ##
