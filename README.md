@@ -28,7 +28,7 @@ You can build with a specific name:
 ```sh
 git clone https://github.com/fixztter/monero-price
 cd monero-price
-go build -o <name> ./main.go
+go build -o <name> ./cmd/main.go
 ```
 
 ## Modify the code at your convenience
