@@ -18,7 +18,7 @@ Supports the next currencies:
 ## Installation
 
 ```sh
-go install github.com/fixztter/monero-price@latest
+go install github.com/fixztter/monero-price/cmd/xmrprice@latest
 ```
 
 ### Build from source
