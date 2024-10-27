@@ -1,5 +1,5 @@
 build:
-	@go build -o bin/monero-price cmd/main.go
+	@go build -o bin/monero-price ./cmd/xmrprice/main.go
 
 run: build
 	@./bin/monero-price
