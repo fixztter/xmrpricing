@@ -1,8 +1,8 @@
 build:
-	@go build -o bin/monero-price ./cmd/xmrprice/main.go
+	@go build -o bin/xmrpricing ./cmd/xmrpricing/main.go
 
 run: build
-	@./bin/monero-price
+	@./bin/xmrpricing
 
 test:
 	@go test -v ./...
