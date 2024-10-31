@@ -7,7 +7,7 @@ import (
 )
 
 // client: Define timeout of http.Client
-var	client = &http.Client{Timeout: time.Second * 15}
+var client = &http.Client{Timeout: time.Second * 15}
 
 // GetJSON(): Parse JSON to targeted struct
 func GetJSON(url string, target any) error {

@@ -17,4 +17,3 @@ func main() {
 
 	fmt.Printf("XMR: %.2f\n", data.Data.PriceUSD)
 }
-
