@@ -17,18 +17,26 @@ Supports the next currencies:
 
 ## Installation
 
+Install the CLI tool:
+
 ```sh
-go install github.com/fixztter/monero-price/cmd/xmrprice@latest
+go install github.com/fixztter/xmrpricing/cmd/xmrpricing@latest
 ```
 
-### Build from source
+Get the Go Module for you project:
+
+```sh
+go get -u github.com/fixztter/xmrpricing@latest
+```
+
+## Build from source
 
 You can build with a specific name:
 
 ```sh
-git clone https://github.com/fixztter/monero-price
-cd monero-price
-go build -o <name> ./cmd/xmrprice/main.go
+git clone https://github.com/fixztter/xmrpricing
+cd  xmrpricing
+go build -o <name> ./cmd/xmrpricing/main.go
 ```
 
 ## Modify the code at your convenience
