@@ -51,17 +51,17 @@ func main() {
 
 	switch *currency {
 	case "btc":
-        fmt.Printf("BTC: %f.6\n", dt.Data.PriceBTC)
+        fmt.Printf("BTC: %.6f\n", dt.Data.PriceBTC)
 	case "usd":
-        fmt.Printf("USD: %f.2\n", dt.Data.PriceUSD)
+        fmt.Printf("USD: %.2f\n", dt.Data.PriceUSD)
 	case "eur":
-        fmt.Printf("EUR: %f.2\n", dt.Data.PriceEUR)
+        fmt.Printf("EUR: %.2f\n", dt.Data.PriceEUR)
 	case "rur":
-        fmt.Printf("RUR: %f.2\n", dt.Data.PriceRUR)
+        fmt.Printf("RUR: %.2f\n", dt.Data.PriceRUR)
 	case "cny":
-        fmt.Printf("CNY: %2.f\n", dt.Data.PriceCNY)
+        fmt.Printf("CNY: %.2f\n", dt.Data.PriceCNY)
 	case "gbp":
-        fmt.Printf("GBP: %f.2\n", dt.Data.PriceGBP)
+        fmt.Printf("GBP: %.2f\n", dt.Data.PriceGBP)
 	default:
 		fmt.Printf("you need to give a specific currency\n")
         flag.PrintDefaults()
